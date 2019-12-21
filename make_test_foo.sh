@@ -13,7 +13,10 @@ class FooTest(DeferrableTestCase):
         self.view = sublime.active_window().open_file(name)
 
     def tearDown(self):
+        yield 0
+        self.view.set_scratch(True)
         self.view.close()
+
 
 EOF
 

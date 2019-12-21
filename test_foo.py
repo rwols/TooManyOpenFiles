@@ -15,6 +15,7 @@ class FooTest(DeferrableTestCase):
         self.view.set_scratch(True)
         self.view.close()
 
+
     def test_0(self):
         pass
     def test_1(self):
